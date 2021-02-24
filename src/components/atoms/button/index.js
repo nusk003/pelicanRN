@@ -6,7 +6,7 @@ import { widthPercentageToDP } from 'react-native-responsive-screen';
 export default (props) => {
     return(
         <TouchableOpacity {...props} >
-            <View style = {{padding : STANDARD_PADDING,backgroundColor : BLUE,margin : STANDARD_MARGIN,borderRadius : widthPercentageToDP(2)}} >
+            <View style = {{alignItems : 'center',padding : STANDARD_PADDING,backgroundColor : BLUE,margin : STANDARD_MARGIN,borderRadius : widthPercentageToDP(2)}} >
                 {props.children}
             </View>
         </TouchableOpacity>

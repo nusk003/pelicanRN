@@ -10,6 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "^3.0.9",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/compat": "^5.3.14",
     "@react-navigation/native": "^5.9.3",
@@ -19,6 +20,7 @@
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-gesture-handler": "^1.10.2",
+    "react-native-paper": "^4.7.2",
     "react-native-reanimated": "^1.13.2",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-safe-area-context": "^3.1.9",

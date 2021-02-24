@@ -34,11 +34,11 @@ const ToDoItem = ({title,description,date}) => {
         color = "black"
     }
     else if (daysRemaining === -1){
-        str = daysRemaining+" day ago"
+        str = Math.abs(daysRemaining)+" day ago"
         color = "orange"
     }
     else{
-        str = daysRemaining+" days ago"
+        str = Math.abs(daysRemaining)+" days ago"
         color = "orange"
 
     }

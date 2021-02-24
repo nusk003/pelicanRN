@@ -6,6 +6,7 @@ import { BLUE, FONT_SIZE_M } from '../../settings';
 import { Task } from '../../molecules';
 import {connect} from 'react-redux'
 import { Button } from '../../atoms';
+import { ActivityIndicator } from 'react-native-paper';
 
 const TaskList = (props) => {
 
@@ -14,6 +15,11 @@ const TaskList = (props) => {
     return(
         
         <View style = {styles.menuList} >
+        {loading ?
+        <View>
+            <ActivityIndicator/>
+        </View>
+        :
         <FlatList
             data = {tasks}
             ListHeaderComponent = {()=>(
@@ -29,7 +35,7 @@ const TaskList = (props) => {
             )}
             renderItem = {({item,index})=><Task {...item} key = {index} />}
             
-        />
+        />}
         </View>
     )
 }
